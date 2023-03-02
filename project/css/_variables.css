@@ -1,0 +1,26 @@
+:root {
+  /* DEV */
+
+  --bg-light: rgb(234, 234, 234);
+
+  /* COLORS */
+  --white: #ffffff;
+  --primary: #6D31EE;
+  --primary_light: #AA9DFA;
+  --primary_dark: #4F28A5;
+  --light_color: #E6E8EC;
+  --text_gray: #A1A6B4;
+  --text_gray_op: rgb(161,166,180, .2);
+  --shade_gray: #D2D5DD;
+  --shade_bg: #F5F6F7;
+  --light_color_op: rgb(230, 232, 236, .4);
+  --black: #121723;
+  --light_black: #292E39;
+  --red: #FF6F6F;
+  --error: #D52B1E;
+  --promo_color: #F0D288;
+  --promo_color_shade: #BB973E;
+
+  /* TRANSTIONS */
+  --short: .3s;
+}

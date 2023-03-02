@@ -1,0 +1,193 @@
+.default-select {
+  position: relative;
+  overflow: hidden;
+  width: 255px;
+  margin-bottom: 337px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  border-radius: 10px;
+  color: var(--black);
+  border: 1px solid transparent;
+}
+
+.default-select.is-focused.is-open {
+  border-color: transparent;
+}
+
+.default-select__inner:active {
+  background-color: var(--shade_gray);
+}
+
+.default-select:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.default-select:last-child {
+  margin-bottom: 0;
+}
+
+.default-select.is-open {
+  overflow: visible;
+}
+
+.default-select.is-disabled .default-select__inner,
+.default-select.is-disabled .default-select__input {
+  background-color: #eaeaea;
+  cursor: not-allowed;
+  -webkit-user-select: none;
+          user-select: none;
+}
+
+.default-select.is-disabled .default-select__item {
+  cursor: not-allowed;
+}
+
+.default-select [hidden] {
+  display: none !important;
+}
+
+.default-select[data-type*=select-one] {
+  cursor: pointer;
+}
+
+.default-select[data-type*=select-one]::after {
+  content: "";
+  height: 8px;
+  width: 8px;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-color: var(--text_gray);
+  position: absolute;
+  right: 15px;
+  z-index: 3;
+  top: 50%;
+  margin-top: -5px;
+  pointer-events: none;
+  transform: rotate(45deg);
+  transition: transform .3s ease-in-out, margin-top .3s ease-in-out, border-color .3s ease-in-out;
+}
+
+.default-select[data-type*=select-one].is-open::after {
+  margin-top: -3px;
+  border-color: var(--text_gray);
+  transform: rotate(225deg);
+}
+
+.default-select__inner {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  z-index: 2;
+  background-color: var(--light_color);
+  padding: 12px 25px 12px 11px;
+  border: 1px solid var(--light_color);
+  border-radius: 10px;
+  font-size: 16px;
+  overflow: hidden;
+  transition: background-color .3s ease-in-out;
+}
+
+.default-select__inner:hover {
+  color: var(--black);
+  background-color: var(--shade_bg);
+}
+
+.is-focused .default-select__inner,
+.is-open .default-select__inner {
+  border-color: var(--light_color);
+}
+
+.default-select__list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.default-select__list--single {
+  display: inline-block;
+  width: 100%;
+}
+
+.default-select__list--single .default-select__item {
+  width: 100%;
+}
+
+.default-select__list--dropdown,
+.default-select__list[aria-expanded] {
+  visibility: hidden;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  background-color: var(--white);
+  border: 1px solid var(--light_color);
+  top: 100%;
+  margin-top: -12px;
+  padding-top: 12px;
+  border-top: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+  word-break: break-all;
+  will-change: visibility;
+}
+
+.is-active.default-select__list--dropdown,
+.is-active.default-select__list[aria-expanded] {
+  visibility: visible;
+}
+
+.is-open .default-select__list--dropdown,
+.is-open .default-select__list[aria-expanded] {
+  border-color: var(--light_color);
+}
+
+
+.default-select__list--dropdown .default-select__list,
+.default-select__list[aria-expanded] .default-select__list {
+  position: relative;
+  max-height: 300px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  will-change: scroll-position;
+}
+
+.default-select__list--dropdown .default-select__item,
+.default-select__list[aria-expanded] .default-select__item {
+  position: relative;
+  padding: 12px 11px;
+  font-size: 16px;
+  color: var(--text_gray);
+}
+
+
+.default-select__list--dropdown .default-select__placeholder {
+  display: none;
+}
+
+.default-select__list--dropdown .default-select__item--selectable.is-highlighted,
+.default-select__list[aria-expanded] .default-select__item--selectable.is-highlighted {
+  background-color: var(--shade_bg);
+  color: var(--black);
+}
+.default-select__list--dropdown .default-select__item--selectable.is-highlighted::after,
+.default-select__list[aria-expanded] .default-select__item--selectable.is-highlighted::after {
+  opacity: 0.5;
+}
+
+.default-select__item {
+  cursor: default;
+}
+
+.default-select__item--selectable {
+  cursor: pointer;
+}
+
+.default-select__item--disabled {
+  cursor: not-allowed;
+  -webkit-user-select: none;
+          user-select: none;
+  opacity: 0.5;
+}

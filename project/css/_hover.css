@@ -1,0 +1,170 @@
+@import "_variables.css";
+
+@media (any-hover: hover) {
+  .header__nav-link:hover {
+    color: var(--primary);
+  }
+
+  .header__link:hover {
+    color: var(--primary);
+  }
+
+  .header__login:hover {
+    color: var(--white);
+    background-color: var(--black);
+  }
+
+  .header__search:hover svg path {
+    stroke: var(--primary_light);
+  }
+
+  .player__btn:hover svg path {
+    fill: var(--primary);
+  }
+
+  .podcasts__btn:hover {
+    color: var(--white);
+    background-color: var(--primary);
+  }
+
+  .btn:hover {
+    background-color: var(--primary_light);
+  }
+
+  .podcasts__card-play-btn:hover svg circle {
+    stroke: var(--primary);
+  }
+
+  .podcasts__card-play-btn:hover svg path {
+    fill: var(--primary);
+  }
+
+  .btn-summary:hover svg path,
+  .btn-like:hover svg path,
+  .btn-share:hover svg path {
+    fill: var(--primary);
+  }
+
+  .btn-summary:hover,
+  .btn-like:hover,
+  .btn-share:hover {
+    color: var(--primary);
+  }
+
+  .programs__link:hover {
+    color: var(--white);
+    background-color: var(--black);
+  }
+
+  .programs__card-link:hover,
+  .programs__card-link:hover svg path {
+    color: var(--primary);
+
+    fill: var(--primary);
+  }
+
+  .guests__ac:first-child:hover,
+  .guests__ac:nth-last-child(2):hover,
+  .guests__ac:hover {
+    border-color: var(--primary_light);
+  }
+
+  .guests__ac:first-child:hover button,
+  .guests__ac:hover button {
+    color: var(--primary_light);
+  }
+
+  .guests__ac:first-child:hover button svg circle,
+  .guests__ac:hover button svg circle {
+    stroke: var(--primary_light);
+  }
+
+  .guests__ac:first-child:hover button svg path,
+  .guests__ac:hover button svg path {
+    stroke: var(--primary_light);
+  }
+
+  .guests__accordion-link:hover {
+    color: var(--primary_light);
+  }
+
+  .guests__socials-link:hover svg g path {
+    fill: var(--primary);
+  }
+
+  .guests__link:hover:not(:checked) {
+    color: var(--white);
+    background-color: var(--primary_light);
+  }
+
+  .radio-label__btn:hover:not(:checked) ~ .radio-label__radio {
+    border-color: var(--primary);
+  }
+
+  .playlists__card:hover .playlists__card-bottom-content::after {
+    opacity: 1;
+  }
+
+  .playlists__card:hover .playlists__card-img {
+    filter: brightness(30%);
+  }
+
+  .playlists__card:hover::before {
+    filter: brightness(30%);
+  }
+
+  .playlists__card:hover .playlists__card-bottom-content {
+    border-color: var(--primary);
+    background-color: var(--primary);
+  }
+
+  .playlists__card:hover .playlists__card-name {
+    color: var(--white);
+  }
+
+  .playlists__card:hover .playlists__card-descr {
+    color: var(--white);
+  }
+
+  .shop__link:hover svg g path:first-child {
+    fill: var(--black);
+  }
+
+  .shop__link:hover svg g path:last-child {
+    fill: var(--promo_color);
+  }
+
+  .shop__link:hover {
+    color: var(--black);
+    background-color: var(--promo_color);
+  }
+
+  .form__input:hover:not(:active) {
+    background-color: var(--text_gray_op);
+  }
+
+  .swiperPrev:hover svg circle,
+  .swiperPrev:hover svg path,
+  .swiperNext:hover svg circle,
+  .swiperNext:hover svg path {
+    stroke: var(--primary_light);
+  }
+
+  .footer__socials-link:hover svg g path,
+  .footer__socials-link:hover svg path {
+    fill: var(--primary);
+  }
+
+  .footer__nav-link:hover {
+    color: var(--primary);
+  }
+
+  .modal__close:hover {
+    background-image: url(../img/modal/close@hover.svg);
+  }
+
+  .modal__regist:hover {
+    color: var(--primary_light);
+  }
+
+}
